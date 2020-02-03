@@ -2,13 +2,13 @@
     <string name="app_name">Tour of Honor 2</string>
     <string name="app_name_year" translatable="false">Tour of Honor 2020</string>
     <string name="lblSettingsTitle">Settings</string>
-    <string name="valueBonusCode" translatable="false">AK4</string>
-    <string name="valueCategory" translatable="false">TOH</string>
-    <string name="valueBonusName" translatable="false">Alaska Siberia WWII Memorial</string>
+    <string name="valueBonusCode" translatable="false">NV4</string>
+    <string name="valueCategory" translatable="false">Tour of Honor</string>
+    <string name="valueBonusName" translatable="false">Something in Nevada</string>
     <string name="valueGPSCoordinates" translatable="false">GPS: 64.845371, -147.717211</string>
     <string name="valueBonusAddress" translatable="false">3650 Nobel Street</string>
-    <string name="valueBonusCity" translatable="false">Lompoc</string>
-    <string name="valueBonusState" translatable="false">CA</string>
+    <string name="valueBonusCity" translatable="false">Reno</string>
+    <string name="valueBonusState" translatable="false">NV</string>
     <string name="trophyGroup" translatable="false">California</string>
     <string name="valueTrophiesNeeded" translatable="false">(7 Memorials)</string>
     <string name="lblAdditionalDetails">Additional Bonus Details</string>

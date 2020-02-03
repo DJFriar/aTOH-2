@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appSettingsView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblSettingsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/lblSettingsTitle"
+        android:textSize="28sp"
+        android:layout_marginStart="8dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rowRiderInfo"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblSettingsTitle"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/lblRiderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="@string/lblRiderNumber"/>
+
+        <EditText
+            android:id="@+id/fieldRiderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:hint="@string/defaultRiderNumber"
+            android:maxLength="4"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rowPillionInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowRiderInfo"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/lblPillionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:text="@string/lblPillionNumber"/>
+
+        <EditText
+            android:id="@+id/fieldPillionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:inputType="number"
+            android:maxLength="4"
+            android:hint="@string/defaultRiderNumber"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:layout_below="@id/rowPillionInfo"
+        android:onClick="saveRiderInfo"
+        android:text="@string/btnLblSaveRiderInfo"/>
+
+    <ImageView
+        android:id="@+id/imageTOHLogo"
+        android:contentDescription="@string/tohLogoDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSaveSettings"
+        android:layout_above="@id/btnSendAppFeedback"
+        android:src="@mipmap/toh_logo"/>
+
+    <Button
+        android:id="@+id/btnSendAppFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/lblAppVersionInfo"
+        android:text="@string/btnLblSendFeedback" />
+
+    <TextView
+        android:id="@+id/lblAppVersionInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_margin="8dp"/>
+
+</RelativeLayout>
